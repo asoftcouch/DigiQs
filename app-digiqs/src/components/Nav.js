@@ -1,15 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router-dom'; 
+import style from '../styles/_nav.scss';
 
 const Nav = () => {
     return(
-        <nav>
-            <h1></h1>
+        <nav className="navigation-bar">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Dashboard</li>
+                <li>Inventario</li>
+                <li>Clientes</li>
+                <li>Configuraciones</li>
             </ul>
         </nav>
     )
 }
+
+export default Nav; 
