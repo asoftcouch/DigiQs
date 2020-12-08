@@ -1,16 +1,65 @@
-.Notifications {
-  background-color: black;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&400&200display=swap");
+
+.Notifiicaciones {
+  color: #e37f4d;
+  font-weight: 400;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.show-all {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  background-color: #e37f4d;
 }
 
 .Notification-messages {
-  border: 3px solid black;
+  overflow-y: scroll;
+  max-height: 1000px;
+  border: 3px solid white;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .Message {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 12px;
+  /* border: 3px solid black; */
+  font-weight: 400;
+  border-top: 2px solid #d4d4d4;
 }
 
-.message-element {
+.Message:hover {
+  background-color: #e37f4d;
 }
 
-.message-text {
+@media only screen and (max-width: 768px) {
+  /* Para mi modelo responsivo: page-viewer */
+  .Notification-messages {
+    height: 150px;
+  }
+
+  .Notifications {
+    height: 300px;
+  }
+
+  .message-element {
+    flex: 1;
+  }
+  .message-text {
+    flex: 2;
+  }
 }

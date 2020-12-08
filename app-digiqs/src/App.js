@@ -12,6 +12,7 @@ import NotiBar from './components/NotiBar';
 import Style from './styles/app.css';
 
 
+
 function App() {
   return (
     <div className="Page-wrapper">
@@ -38,6 +39,7 @@ function App() {
         <NotiBar />
 
         </div>
+
       
     </div>
   );
