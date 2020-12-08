@@ -13,8 +13,14 @@ import Style from './styles/app.css';
 function App() {
   return (
     <div>
-      <p>DigiQs<span>Data Management & Analytics</span></p>
-      <p>Logout</p>
+      <div className="DigiQs-header">
+        <div className="Logo">
+          <br/>
+          <h1>DigiQs</h1>
+          <p>Inventory Management & Analytics</p>
+          <br/>
+        </div>
+      </div>
       <div className="Page-Wrapper">
         <div className="Navigation">
           <Nav />

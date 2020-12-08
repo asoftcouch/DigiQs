@@ -1,0 +1,14 @@
+.navigation-bar ul li {
+  list-style: none;
+}
+
+.navigation-bar ul {
+  color: white;
+  background-color: #02182b;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-bar ul li {
+  margin: 20px auto;
+}

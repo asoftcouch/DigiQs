@@ -8,8 +8,10 @@ const Nav = () => {
             <ul>
                 <li>Dashboard</li>
                 <li>Inventario</li>
+                <li>Lotes</li>
                 <li>Clientes</li>
                 <li>Configuraciones</li>
+                <li>Salir</li>
             </ul>
         </nav>
     )

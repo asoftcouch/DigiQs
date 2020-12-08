@@ -1,20 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&400&200display=swap");
 
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: "Montserratet", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.DigiQs-header {
+  background-color: #02182b;
+  color: white;
+}
+
+.Logo h1,
+p {
+  margin-left: 2%;
+}
+
+.Logo h1 {
+  font-size: 25px;
+}
+
+.Logo p {
+  font-size: 10px;
+  color: #d74e09;
+  font-weight: 600;
 }
 
 .Page-Wrapper {
   display: flex;
   flex-direction: row;
+  height: 100%;
+  background-color: black;
 }
 
 .Navigation {
-  background-color: red;
+  flex: 1;
+  height: 100%;
 }
 
-.navigation-bar {
-  list-style: none;
+.Page-view {
+  flex: 8;
 }
