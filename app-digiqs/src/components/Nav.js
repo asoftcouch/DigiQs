@@ -7,9 +7,10 @@ const Nav = () => {
     <div>
         <div className="logo">
             <h1>DigiQs</h1>
-            <h2>Inventory Management</h2>
+            <h2>Inventory & Management</h2>
             <br/>
         </div>
+        <br />
         <nav className="nav">
             <ul>
                 <li>Dashboard</li>

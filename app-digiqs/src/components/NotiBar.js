@@ -11,6 +11,7 @@ const Notibar = () => {
 
                 <button className="show-all">Ver todas</button>
 
+
                 <div className="Notification-messages">
                     
                     <div className="Message">
@@ -102,7 +103,34 @@ const Notibar = () => {
                             <p>orden #1717 ha sido aprobada</p>
                         </div>
                     </div>
-                    
+
+                    <div className="Message">
+                        <div className="message-element">
+                            <p>Nuevo:</p>
+                        </div>
+                        <div className="message-text">
+                            <p>orden #1717 ha sido aprobada</p>
+                        </div>
+                    </div>
+
+                    <div className="Message">
+                        <div className="message-element">
+                            <p>Nuevo:</p>
+                        </div>
+                        <div className="message-text">
+                            <p>orden #1717 ha sido aprobada</p>
+                        </div>
+                    </div>
+
+                    <div className="Message">
+                        <div className="message-element">
+                            <p>Nuevo:</p>
+                        </div>
+                        <div className="message-text">
+                            <p>orden #1717 ha sido aprobada</p>
+                        </div>
+                    </div>
+
 
             </div>
         </div>
