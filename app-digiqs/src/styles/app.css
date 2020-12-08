@@ -11,27 +11,5 @@ html,
 body {
   height: 100%;
   width: 100%;
-}
-
-.Page-wrapper {
-  display: flex;
-}
-
-.Navigation-bar {
-  flex: 1;
-  background-color: #02182b;
-  color: white;
-  height: 100%;
-}
-
-.Page-view {
-  flex: 4;
-  background-color: green;
-  position: relative;
-}
-
-.Notifications-bar {
-  flex: 1;
-  background-color: blue;
-  position: relative;
+  overflow: hidden;
 }
