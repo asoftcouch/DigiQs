@@ -12,19 +12,14 @@ import Style from './styles/app.css';
 
 function App() {
   return (
-    <div>
-      <div className="DigiQs-header">
-        <div className="Logo">
-          <br/>
-          <h1>DigiQs</h1>
-          <p>Inventory Management & Analytics</p>
-          <br/>
-        </div>
+    <div className="Page-wrapper">
+
+      <div className="Navigation-bar">
+
+      <Nav />
+
       </div>
-      <div className="Page-Wrapper">
-        <div className="Navigation">
-          <Nav />
-        </div>
+      
         <div className="Page-view">
         <Switch>
           <Route path="/">
@@ -35,7 +30,11 @@ function App() {
           </Route>
         </Switch>
         </div>
-      </div>
+
+        <div className="Notifications-bar">
+
+        </div>
+      
     </div>
   );
 }

@@ -4,7 +4,13 @@ import style from '../styles/nav.css';
 
 const Nav = () => {
     return(
-        <nav className="navigation-bar">
+    <div>
+        <div className="logo">
+            <h1>DigiQs</h1>
+            <h2>Inventory Management </h2>
+            <br/>
+        </div>
+        <nav className="nav">
             <ul>
                 <li>Dashboard</li>
                 <li>Inventario</li>
@@ -14,6 +20,7 @@ const Nav = () => {
                 <li>Salir</li>
             </ul>
         </nav>
+    </div>
     )
 }
 

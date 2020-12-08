@@ -4,40 +4,34 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-.DigiQs-header {
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.Page-wrapper {
+  display: flex;
+}
+
+.Navigation-bar {
+  flex: 1;
   background-color: #02182b;
   color: white;
-}
-
-.Logo h1,
-p {
-  margin-left: 2%;
-}
-
-.Logo h1 {
-  font-size: 25px;
-}
-
-.Logo p {
-  font-size: 10px;
-  color: #d74e09;
-  font-weight: 600;
-}
-
-.Page-Wrapper {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  background-color: black;
-}
-
-.Navigation {
-  flex: 1;
   height: 100%;
 }
 
 .Page-view {
-  flex: 8;
+  flex: 4;
+  background-color: green;
+  position: relative;
+}
+
+.Notifications-bar {
+  flex: 1;
+  background-color: blue;
+  position: relative;
 }

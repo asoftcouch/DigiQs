@@ -1,14 +1,19 @@
-.navigation-bar ul li {
-  list-style: none;
+.logo h1 {
+  font-size: 30px;
+  margin-left: 5%;
+}
+.logo h2 {
+  font-size: 15px;
+  margin-left: 5%;
 }
 
-.navigation-bar ul {
-  color: white;
-  background-color: #02182b;
+.nav ul {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
-.navigation-bar ul li {
-  margin: 20px auto;
+.nav ul li {
+  margin-left: 5%;
+  padding: 4px;
 }
