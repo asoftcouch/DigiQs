@@ -19,10 +19,12 @@ body {
 
 .Page-view {
   flex: 5;
+  background-color: red;
 }
 
 .Notification-bar {
   flex: 1;
+  background-color: blue;
 }
 
 .Navigation-bar {
@@ -33,7 +35,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  /* Para mi modelo responsivo: page-viewer*/
+  /* Para mi modelo responsivo: page-viewer */
   .Page-wrapper {
     flex-direction: column;
   }
