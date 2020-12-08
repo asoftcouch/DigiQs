@@ -10,6 +10,31 @@
 html,
 body {
   height: 100%;
-  width: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.Page-wrapper {
+  display: flex;
+}
+
+.Page-view {
+  flex: 5;
+}
+
+.Notification-bar {
+  flex: 1;
+}
+
+.Navigation-bar {
+  flex: 1;
+  min-width: 150px;
+  background-color: #02182b;
+  height: 1200px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Para mi modelo responsivo: page-viewer*/
+  .Page-wrapper {
+    flex-direction: column;
+  }
 }

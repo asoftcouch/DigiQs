@@ -7,7 +7,7 @@ const Nav = () => {
     <div>
         <div className="logo">
             <h1>DigiQs</h1>
-            <h2>Inventory Management </h2>
+            <h2>Inventory Management</h2>
             <br/>
         </div>
         <nav className="nav">
@@ -16,7 +16,7 @@ const Nav = () => {
                 <li>Inventario</li>
                 <li>Lotes</li>
                 <li>Clientes</li>
-                <li>Configuraciones</li>
+                <li>Ajustes</li>
                 <li>Salir</li>
             </ul>
         </nav>
