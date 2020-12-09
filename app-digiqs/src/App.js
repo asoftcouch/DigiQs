@@ -24,14 +24,16 @@ function App() {
       </div>
       
         <div className="Page-view">
-        <Switch>
-          <Route path="/">
-            <Dashboard />
-          </Route>
-          <Route path="/Inventario">
-            <Inventario />
-          </Route>
-        </Switch>
+          <div className="Viewer">
+            <Switch>
+              <Route path="/">
+                <Dashboard />
+              </Route>
+              <Route path="/Inventario">
+                <Inventario />
+              </Route>
+            </Switch>
+          </div>
         </div>
 
         <div className="Notifications-bar">

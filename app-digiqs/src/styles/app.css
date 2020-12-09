@@ -34,6 +34,14 @@ body {
   height: 1200px;
 }
 
+.Viewer {
+  overflow-y: scroll;
+  margin: 30px auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-height: 600px;
+}
+
 @media only screen and (max-width: 768px) {
   /* Para mi modelo responsivo: page-viewer */
   .Page-wrapper {
@@ -42,5 +50,11 @@ body {
 
   .Page-wrapper :nth-child(2) {
     order: 3;
+  }
+
+  .html,
+  body {
+    height: 100%;
+    overflow-y: scroll;
   }
 }
