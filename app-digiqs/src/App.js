@@ -7,6 +7,7 @@ import Inventario from './pages/Inventario';
 //Componentes 
 import Nav from './components/Nav';
 import NotiBar from './components/NotiBar';
+import InventoryList from './components/InventoryList'
 
 //Styles
 import Style from './styles/app.css';
@@ -27,7 +28,8 @@ function App() {
           <div className="Viewer">
             <Switch>
               <Route path="/">
-                <Dashboard />
+                {/* <Dashboard /> */}
+                <InventoryList />
               </Route>
               <Route path="/Inventario">
                 <Inventario />
