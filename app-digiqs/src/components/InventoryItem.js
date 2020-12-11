@@ -1,10 +1,12 @@
 import React from 'react';
 
 
-const InventoryItem = (props) => {
+const InventoryItem = ({ name, quantity }) => {
     return(
         <div className="Inventory-item">
-
+            <p> Nombre de producto: {name} </p>
+            <p> Cantidad de producto: {quantity} </p>
+            <br />
         </div>
     )
 }
