@@ -14,35 +14,9 @@ const InventoryList = () => {
 
       axios.get('http://localhost:5000/inventario')
         .then((data) => {
-
             console.log(data.data)
-
             console.log('has been fetched')
-
-            // data.data.map((item) => list.push(item));
-
-            // list.map((item) => console.log(item.name));
-
             console.log(inventoryItems);
-
-
-            
-            //inventoryItems.map((item) => console.log(item));
-
-            // console.log('These are my items');
-
-            // console.log(inventoryItems);
-
-            // inventoryItems.map((item) => console.log(item[2].name));
-
-
-
-            
-
-            // inventoryItems.map((items) => console.log(items.name) );
-            // setInventoryItems( );
-
-
         })
         .catch(err => console.log(err))
     },[])
