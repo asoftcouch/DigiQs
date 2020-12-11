@@ -7,19 +7,39 @@ import axios from 'axios';
 
 const InventoryList = () => {
 
-    const [ inventoryItems, setInventoryItems ] = useState('');
-
+    let list = []; 
+    const [ inventoryItems, setInventoryItems ] = useState('null');
 
     useEffect(() => {
-        axios.get('http://localhost:5000/inventario')
+
+      axios.get('http://localhost:5000/inventario')
         .then((data) => {
+
             console.log(data.data)
+
             console.log('has been fetched')
-            setInventoryItems({ ...data } );
+
+            // data.data.map((item) => list.push(item));
+
+            // list.map((item) => console.log(item.name));
+
             console.log(inventoryItems);
+
+
+            
+            //inventoryItems.map((item) => console.log(item));
+
+            // console.log('These are my items');
+
+            // console.log(inventoryItems);
+
+            // inventoryItems.map((item) => console.log(item[2].name));
+
+
+
             
 
-            inventoryItems.map((items) => console.log(items.name) );
+            // inventoryItems.map((items) => console.log(items.name) );
             // setInventoryItems( );
 
 
@@ -31,7 +51,9 @@ const InventoryList = () => {
         <div>
             {/* //Aqui van todos mis objetos  */}
             {/* <p> { inventoryItems[0].name } </p> */}
-            {/* { inventoryItems.map((items) => ( <InventoryItem name={items} quantity={items} /> ))} */}
+            {/* { inventoryItems.map((items) => ( <InventoryItem name={items.name} quantity={items.quantity} /> ))} */}
+            {   list.map((item) =>  < InventoryItem name={item} quantity={item} /> ) }
+            <InventoryItem name={"name"} quantity={"quantity"} />
             {/* <inventoryItem name={data.name} quantity={data.quantity} />  */}
         </div>
     )
