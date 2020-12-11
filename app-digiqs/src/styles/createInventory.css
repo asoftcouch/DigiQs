@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&400&200display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 .createInventory-form {
   display: flex;
@@ -7,7 +7,8 @@
   justify-content: space-evenly;
   background-color: #02182b;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
+  border-radius: 5px;
 }
 
 .form-input {
@@ -21,5 +22,14 @@
 .form-input input[type="text"] {
   border: 0;
   border-radius: 5px;
-  text-indent: 5;
+  text-indent: 5px;
+}
+
+.submit-form {
+  border: 0;
+  padding: 1px;
+  border-radius: 5px;
+  color: white;
+  background-color: #e37f4d;
+  width: 100%;
 }
