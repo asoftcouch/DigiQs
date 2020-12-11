@@ -6,6 +6,8 @@ const InventoryItem = ({ name, quantity }) => {
         <div className="Inventory-item">
             <p> Nombre de producto: {name} </p>
             <p> Cantidad de producto: {quantity} </p>
+            <p> Precio unitario:      </p>
+            <p> Categoria:             </p>
             <br />
         </div>
     )

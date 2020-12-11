@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&400&200display=swap");
+
+.createInventory-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #02182b;
+  color: white;
+  font-weight: 400;
+}
+
+.form-input {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input input[type="text"] {
+  border: 0;
+  border-radius: 5px;
+  text-indent: 5;
+}
