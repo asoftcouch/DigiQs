@@ -12,6 +12,9 @@ import CreateInventory from './components/createInventory';
 
 //Redux Store
 import {createStore} from 'redux';
+import rootReducers from './reducers';
+import {Provider} from 'react-redux';
+
 
 //Styles
 import Style from './styles/app.css';
