@@ -5,12 +5,18 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
 
 //Redux Store
-import {createStore} from 'redux';
+import {createStore, applyMiddleware, compose} from 'redux';
 import rootReducers from './reducers';
 import {Provider} from 'react-redux';
 import rootReducer from './reducers';
+import thunk from 'redux-thunk';
 
-const store = createStore(rootReducer);
+
+
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(rootReducer, composeEnhancer(applyMiddleware(thunk))
+  );
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Switch, Route} from 'react-router-dom'
 
 import Inventario from './pages/Inventario';
@@ -10,18 +10,24 @@ import NotiBar from './components/NotiBar';
 import InventoryList from './components/InventoryList';
 import CreateInventory from './components/createInventory';
 
-//Redux Store
-import {createStore} from 'redux';
-import rootReducers from './reducers';
-import {Provider} from 'react-redux';
 
-
+import {useDispatch} from 'react-redux';
+import {loadInventory} from './actions/InventoryAction';
 //Styles
 import Style from './styles/app.css';
 
 
 
+
+
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(()=> {
+    dispatch( loadInventory() );
+  });
+
   return (
     <div className="Page-wrapper">
 
