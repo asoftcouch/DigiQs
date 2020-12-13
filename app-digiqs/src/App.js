@@ -11,8 +11,6 @@ import InventoryList from './components/InventoryList';
 import CreateInventory from './components/createInventory';
 
 
-import {useDispatch} from 'react-redux';
-import {loadInventory} from './actions/InventoryAction';
 //Styles
 import Style from './styles/app.css';
 
@@ -22,11 +20,6 @@ import Style from './styles/app.css';
 
 function App() {
 
-  const dispatch = useDispatch();
-
-  useEffect(()=> {
-    dispatch( loadInventory() );
-  });
 
   return (
     <div className="Page-wrapper">
@@ -43,8 +36,9 @@ function App() {
             <Switch>
               <Route path="/">
                 {/* <Dashboard /> */}
-                <CreateInventory />
-                <InventoryList />
+                {/* <CreateInventory />
+                <InventoryList /> */}
+                <Inventario />
               </Route>
               <Route path="/Inventario">
                 <Inventario />
