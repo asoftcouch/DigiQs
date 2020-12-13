@@ -13,7 +13,7 @@ export const loadInventory = () => async (dispatch) => {
     dispatch({
         type: "FETCH_INVENTORY",
         payload: {
-            inventory: inventoryData,
+            inventory: inventoryData.data,
         }
     })
 }
