@@ -38,6 +38,7 @@ function App() {
                 {/* <Dashboard /> */}
                 {/* <CreateInventory />
                 <InventoryList /> */}
+                <CreateInventory />
                 <Inventario />
               </Route>
               <Route path="/Inventario">
