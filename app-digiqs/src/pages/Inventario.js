@@ -19,7 +19,6 @@ const Inventario = () => {
     return (
         <div>
             <h2>Inventario</h2>
-
             { inventory.map((item) => <InventoryItem key={item._id} name={item.name} quantity={item.quantity} price={item.price}/> ) }
         </div>
     )
