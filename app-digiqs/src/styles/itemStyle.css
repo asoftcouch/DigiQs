@@ -1,0 +1,25 @@
+td {
+  background-color: white;
+  padding: 5px;
+  text-align: left;
+  border: 0.5 solid white;
+}
+
+tr {
+  border: 0;
+}
+
+th {
+  background-color: #02182b;
+  color: white;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+.title-name {
+  color: #02182b;
+  text-align: left;
+}

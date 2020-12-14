@@ -40,6 +40,8 @@ body {
   margin: 30px auto;
   margin-left: 5%;
   margin-right: 5%;
+  /* min-height: 550px;
+  max-height: 550px; */
   height: 550px;
 }
 

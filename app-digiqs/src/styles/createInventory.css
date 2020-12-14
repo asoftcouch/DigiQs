@@ -11,6 +11,10 @@
   border-radius: 5px;
 }
 
+.title-header {
+  color: #02182b;
+}
+
 .form-input {
   font-size: 13px;
   font-weight: 400;

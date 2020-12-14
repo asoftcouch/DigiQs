@@ -37,7 +37,9 @@ const InventoryList = () => {
         <div>
             {/* //Aqui van todos mis objetos  */}
             {/* <p> { inventoryItems[0].name } </p> */}
+            {/* <table>
             { itemList.inventory.map((items) => ( <InventoryItem key={items._id} name={items.name} quantity={items.quantity} />))}
+            </table> */}
             {/* <InventoryItem name={"name"} quantity={"quantity"} /> */}
             {/* <inventoryItem name={data.name} quantity={data.quantity} />  */}
         </div>

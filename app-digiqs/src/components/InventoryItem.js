@@ -1,15 +1,15 @@
 import React from 'react';
+import Style from '../styles/itemStyle.css';
 
 
-const InventoryItem = ({ name, quantity }) => {
+const InventoryItem = ({ name, quantity, price, category }) => {
     return(
-        <div className="Inventory-item">
-            <p> Nombre de producto: {name} </p>
-            <p> Cantidad de producto: {quantity} </p>
-            <p> Precio unitario:      </p>
-            <p> Categoria:             </p>
-            <br />
-        </div>
+        <tr className="Inventory-item">
+            <td className='name'> {name} </td>
+            <td className='quantity'>{quantity} </td>
+            <td className='unit-price'> {price} </td>
+            <td className='category'> {category} </td>
+        </tr>
     )
 }
 

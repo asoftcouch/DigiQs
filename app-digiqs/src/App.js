@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import {Switch, Route} from 'react-router-dom'
 
 import Inventario from './pages/Inventario';
+import Dashboard from './pages/Dashboard';
 //Componentes 
 import Nav from './components/Nav';
 import NotiBar from './components/NotiBar';
@@ -31,17 +32,17 @@ function App() {
       </div>
       
         <div className="Page-view">
-          
+        
           <div className="Viewer">
             <Switch>
-              <Route path="/">
-                {/* <Dashboard /> */}
-                {/* <CreateInventory />
-                <InventoryList /> */}
+              <Route path="/" exact>
+                <Dashboard />
+              </Route>
+              <Route path="/inventory" exact>
                 <CreateInventory />
                 <Inventario />
               </Route>
-              <Route path="/Inventario">
+              <Route path="/Inventario" >
                 <Inventario />
               </Route>
             </Switch>
