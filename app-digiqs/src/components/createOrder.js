@@ -39,7 +39,6 @@ const CreateOrder = () => {
         // const checkboxes = document.getElementsByName("products");
         // const selectedCboxes = Array.prototype.slice.call(checkboxes).filter(ch => ch.checked==true).map((item)=> setOrderDetail(...orderDetail  [ item.defaultValue]));
     }
-    console.log(orderDetail);
 
     return(
         <div>

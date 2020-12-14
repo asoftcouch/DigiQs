@@ -9,7 +9,7 @@ import Nav from './components/Nav';
 import NotiBar from './components/NotiBar';
 import CreateOrder from './components/createOrder';
 import CreateInventory from './components/createInventory';
-
+import Clients from './components/Clients';
 
 //Styles
 import Style from './styles/app.css';
@@ -43,6 +43,9 @@ function App() {
               </Route>
               <Route path="/Orders" >
                 < CreateOrder />
+              </Route>
+              <Route path="/Clients">
+                <Clients />
               </Route>
             </Switch>
           </div>
