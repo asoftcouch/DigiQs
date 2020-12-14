@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import style from '../styles/createOrder.css';
 import InventoryPage from '../pages/Inventario';
-
+import OrderItems from './OrderItems';
 
 import {useDispatch, useSelector} from 'react-redux';
 import {loadInventory} from '../actions/InventoryAction';
 
+
+// import Orders from './Orders';
 
 
 const CreateOrder = () => { 
@@ -48,6 +50,8 @@ const CreateOrder = () => {
                 <input type="text"/>
                 <input type="submit"/>   
             </form>
+
+            {/* <Orders /> */}
         </div>
     )
 }

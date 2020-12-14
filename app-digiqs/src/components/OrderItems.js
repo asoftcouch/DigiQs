@@ -1,7 +1,7 @@
-import react from 'React';
+import React from 'react';
 
 
-const Orders = () => {
+const OrdersItems = () => {
     return(
 
         <div>
@@ -12,3 +12,5 @@ const Orders = () => {
         </div>
     ) 
 }
+
+export default OrdersItems;
