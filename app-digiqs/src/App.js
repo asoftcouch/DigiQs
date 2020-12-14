@@ -7,8 +7,7 @@ import Dashboard from './pages/Dashboard';
 //Componentes 
 import Nav from './components/Nav';
 import NotiBar from './components/NotiBar';
-
-import InventoryList from './components/InventoryList';
+import CreateOrder from './components/createOrder';
 import CreateInventory from './components/createInventory';
 
 
@@ -42,8 +41,8 @@ function App() {
                 <CreateInventory />
                 <Inventario />
               </Route>
-              <Route path="/Inventario" >
-                <Inventario />
+              <Route path="/Orders" >
+                < CreateOrder />
               </Route>
             </Switch>
           </div>

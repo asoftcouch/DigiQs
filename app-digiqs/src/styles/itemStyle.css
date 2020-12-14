@@ -9,6 +9,14 @@ tr {
   border: 0;
 }
 
+.actions {
+  text-align: center;
+  background-color: #e37f4d;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
 th {
   background-color: #02182b;
   color: white;

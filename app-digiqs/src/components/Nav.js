@@ -13,12 +13,12 @@ const Nav = () => {
         <br />
         <nav className="nav">
             <ul>
-                <li>Dashboard</li>
-                <li><Link to="inventory">Inventario</Link></li>
-                <li>Lotes</li>
-                <li>Clientes</li>
-                <li>Ajustes</li>
-                <li>Salir</li>
+                <li><Link to="/">Dashboard</Link></li>
+                <li><Link to="/inventory">Inventario</Link></li>
+                <li><Link to="/orders">Lotes</Link></li>
+                <li><Link to="/clients">Clientes</Link></li>
+                <li><Link to="/settings">Ajustes</Link></li>
+                <li><Link to="/exit">Salir</Link></li>
             </ul>
         </nav>
     </div>

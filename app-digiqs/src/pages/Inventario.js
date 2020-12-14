@@ -10,14 +10,14 @@ import InventoryItem from '../components/InventoryItem';
 import Style from '../styles/itemStyle.css';
 
 
-const Inventario = () => {
+const Inventario = ({ action, actionName }) => {
     const dispatch = useDispatch();
 
     useEffect(()=> {
       dispatch( loadInventory() );
     }, [dispatch]);
 
-    const { inventory } = useSelector((state) => state.inventory)
+    const { inventory } = useSelector((state) => state.inventory);
   
     return (
         <div>
@@ -30,8 +30,9 @@ const Inventario = () => {
                     <th>Cantidad</th>
                     <th>Precio por Unidad</th>
                     <th>Categoria</th>
+                    <th>Acciones</th>
                 </tr>
-            { inventory.map((item) => <InventoryItem key={item._id} name={item.name} quantity={item.quantity} price={item.price} category={item.category}/> ) }
+            { inventory.map((item) => <InventoryItem actionName={actionName} action={action} key={item._id} name={item.name} quantity={item.quantity} price={item.price} category={item.category}/> ) }
                 </tbody>
             </table>
         </div>

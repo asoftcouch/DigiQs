@@ -31,7 +31,12 @@
   list-style: none;
 }
 
-.nav ul li:hover {
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
   cursor: pointer;
   color: #e37f4d;
 }
