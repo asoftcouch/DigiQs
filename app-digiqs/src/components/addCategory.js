@@ -37,7 +37,8 @@ const AddCategory = () => {
         setDescription(e.target.value);
     }
 
-    const addCategory = async () => {
+    const addCategory = async (e) => {
+        e.preventDefault();
         const response = await axios.post('http://localhost:5000/Categories/add' ,{category: category, description: description})
         dispatch(categoriesLoad());
     }
