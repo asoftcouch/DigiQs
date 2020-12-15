@@ -1,4 +1,4 @@
-# DigiQs
+# DigiQs 
 Proyecto de Ingenieria de Software ll
 
 
@@ -22,7 +22,7 @@ npm start
 
 ## API  
 
-Esta aplicacion esta alimentada desde el Digiqs-API utilizando MongoDb
+Esta aplicacion esta alimentada desde el Digiqs-API utilizando MongoDb. En esta fecha de entrega la plataforma todavia esta incompleta.
 
 
 ## Creada por: 
