@@ -1,135 +1,52 @@
-import React from 'react';
+import React,{ useEffect }  from 'react';
 import {Link} from 'react-router-dom'; 
 import Style from '../styles/notibar.css';
+import NotiMessages from './NotiMessages';
+
+
+import {useDispatch, useSelector} from 'react-redux';
+import { loadNotifications } from '../actions/NotificationActions';
+
 
 
 const Notibar = () => {
+
+
+    const dispatch = useDispatch();
+
+    useEffect(()=> {
+      dispatch( loadNotifications() );
+    }, [dispatch]);
+
+    const { notifications } = useSelector((state) => state.notifications);
+
+
+
     return(
         <div className="Notifications">
 
+                <br/>
                 <h2 className="Notifiicaciones">Notificaciones: </h2>
-
-                <button className="show-all">Ver todas</button>
 
 
                 <div className="Notification-messages">
                     
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
+                    <NotiMessages />
 
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-                    
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-                    
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-                    
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-                    
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
-
-                    <div className="Message">
-                        <div className="message-element">
-                            <p>Nuevo:</p>
-                        </div>
-                        <div className="message-text">
-                            <p>orden #1717 ha sido aprobada</p>
-                        </div>
-                    </div>
 
 
             </div>

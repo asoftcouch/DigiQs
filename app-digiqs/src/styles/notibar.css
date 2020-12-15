@@ -8,7 +8,7 @@
   margin-right: 5%;
 }
 
-.show-all {
+/* .show-all {
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
@@ -18,11 +18,11 @@
   color: white;
   background-color: #e37f4d;
   width: 90%;
-}
+} */
 
 .Notification-messages {
   overflow-y: scroll;
-  height: 500px;
+  height: 300px;
   border: 3px solid white;
   margin-left: 5%;
   margin-right: 5%;
@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border: 3px solid black;
 }
 
 .Message {
@@ -51,10 +52,15 @@
   /* Para mi modelo responsivo: page-viewer */
   .Notification-messages {
     height: 150px;
+    justify-content: space-evenly;
+  }
+
+  .Message {
+    margin-left: 1%;
   }
 
   .Notifications {
-    height: 300px;
+    height: 250px;
   }
 
   .message-element {
