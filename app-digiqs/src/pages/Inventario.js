@@ -9,9 +9,16 @@ import InventoryItem from '../components/InventoryItem';
 
 import Style from '../styles/itemStyle.css';
 
+import { motion } from 'framer-motion'
 
 const Inventario = ({ action, actionName }) => {
     const dispatch = useDispatch();
+
+
+    const Animation = {
+        hidden: {y: 100},
+        show: {y: 0, transition: {duration: 0.3, ease: 'easeIn'}}
+    }
 
     useEffect(()=> {
       dispatch( loadInventory() );
@@ -20,7 +27,7 @@ const Inventario = ({ action, actionName }) => {
     const { inventory } = useSelector((state) => state.inventory);
   
     return (
-        <div>
+        <motion.div variants={Animation} initial="hidden" animate="show" className="inventory-board"> 
             <br/>
             <h2 className="title-name">Lista de Inventario</h2>
             <table>
@@ -34,7 +41,7 @@ const Inventario = ({ action, actionName }) => {
             { inventory.map((item) => <InventoryItem actionName={actionName} action={action} key={item._id} name={item.name} quantity={item.quantity} price={item.price} category={item.category}/> ) }
                 </tbody>
             </table>
-        </div>
+        </motion.div>
     )
 }
 

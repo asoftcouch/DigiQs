@@ -4,10 +4,17 @@ import Style from '../styles/orders.css';
 import { v4 as uuidv4 } from 'uuid'
 import {useDispatch, useSelector} from 'react-redux';
 import {loadOrders} from '../actions/OrdersAction';
-
+import { motion } from 'framer-motion'
 
 
 const Orders = () => { 
+
+
+
+    const Animation = {
+        hidden: {opacity: 0},
+        show: {opacity: 1, transition: {duration: 0.2}}
+    }
 
     const dispatch = useDispatch();
 
@@ -21,7 +28,7 @@ const Orders = () => {
 
     return (
 
-    <div>
+    <motion.div variants={Animation} animate="show" initial="hidden">
         { orders.map((item)=> 
         <div key={item._id} className="order-listing">
             <div className='master'>
@@ -46,7 +53,7 @@ const Orders = () => {
             </div>
 
         </div> )}
-    </div>
+    </motion.div>
 
     )
 }

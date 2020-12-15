@@ -2,19 +2,29 @@ import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'; 
 import Style from '../styles/createInventory.css'
 import axios from 'axios';
-
-
-
 import {useDispatch, useSelector} from 'react-redux';
+import {categoriesLoad} from '../actions/CategoryAction';
 import {loadInventory} from '../actions/InventoryAction';
 
 
 const CreateInventory = () => {
 
 
-    const inventory = useSelector ((state) => state.inventory); 
-    const dispatch = useDispatch(); 
+    const dispatch = useDispatch();
 
+    useEffect(()=> {
+        dispatch( categoriesLoad() );
+      }, [dispatch]);
+  
+    const { categories } = useSelector((state) => state.categories);
+    const { inventory } = useSelector ((state) => state.inventory); 
+
+
+    const [category , setCategory ] = useState('');
+
+    const categoryHandler = (e) => {
+        setCategory(e.target.value);
+    }
     // const [ newList , setNewList] = useState({name: '', quantity: '', price: '', category: ''});
     
     const submitListHandler = async (e) => {
@@ -51,16 +61,18 @@ const CreateInventory = () => {
                     </div>
                     <div className="form-input">
                         <label htmlFor="product-quantity">Cantidad para inventario: </label>
-                        <input type="text" name="quantity" id="quantity"/>
+                        <input type="number" step="1" min="1" maxLength="5" name="quantity" id="quantity"/>
                     </div>
                     <div className="form-input">
                         <label htmlFor="product-price">Precio unitario: </label>
-                        <input type="text" name="price" id="price"/>
+                        <input type="number" step="0.5" min="1" maxLength="5" name="price" id="price"/>
                     </div>
                     <div className="form-input">
-                        <label htmlFor="product-price">Categoria: </label>
-                        <input type="text" name="category" id="category"/>
-                    </div>
+                        <label htmlFor="product-category">Categoria: </label>
+                        <select name="category" id="category">
+                            {categories.map((item) => <option key={item._id} value={item.value}> {item.value} </option>)}
+                        </select>
+                    </div> 
 
                 </div>
                 <div className="form-input-submit">

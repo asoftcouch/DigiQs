@@ -12,6 +12,7 @@ import CreateOrder from './components/createOrder';
 import CreateInventory from './components/createInventory';
 import Clients from './components/Clients';
 import Orders from './components/Orders';
+import AddCategories from './components/addCategory';
 
 
 //Styles
@@ -45,14 +46,18 @@ function App() {
                 <Inventario />
               </Route>
 
-              <Route path="/Orders" >
+              <Route path="/Orders" exact>
                 <Orders />
               </Route>
 
 
 
-              <Route path="/Clients">
+              <Route path="/Clients" exact>
                 <Clients />
+              </Route>
+
+              <Route path="/Settings" exact>
+                <AddCategories />
               </Route>
             </Switch>
           </div>

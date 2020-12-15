@@ -23,7 +23,8 @@
   justify-content: space-between;
 }
 
-.form-input input[type="text"] {
+.form-input input[type="text"],
+input[type="number"] {
   border: 0;
   border-radius: 5px;
   text-indent: 5px;

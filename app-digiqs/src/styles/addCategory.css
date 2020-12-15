@@ -1,0 +1,39 @@
+.form-content {
+  background-color: #02182b;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.form-submit {
+  background-color: #e37f4d;
+  color: white;
+  padding: 5px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  border: 3px solid white;
+}
+
+.form-inputs {
+  margin: 10px auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.big-input,
+.category-input {
+  resize: none;
+  width: 300px;
+  border-radius: 5px;
+  border: 0;
+  text-indent: 5px;
+}
+
+.big-input:hover,
+.category-input:hover {
+  border: 3px solid #e37f4d;
+}

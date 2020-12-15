@@ -5,12 +5,19 @@ import style from '../styles/clients.css';
 
 import {useDispatch, useSelector} from 'react-redux';
 import {loadClients} from '../actions/ClientsActions';
-
+import {motion} from 'framer-motion'
 
 
 const Clients = () => { 
 
     const dispatch = useDispatch();
+
+    
+    const Animation = {
+        hidden: {opacity: 0},
+        show: {opacity: 1, transition: {duration: 0.2}}
+    }
+
 
     useEffect(()=> {
         dispatch( loadClients() );
@@ -19,7 +26,7 @@ const Clients = () => {
       const { clients } = useSelector((state) => state.clients)
 
         return (
-        <div> 
+        <motion.div variants={Animation} initial="hidden" animate="show"> 
             <div>
                 <h2>Lista de Clientes</h2>
             </div>   
@@ -34,7 +41,7 @@ const Clients = () => {
                     </div> 
                 )}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
