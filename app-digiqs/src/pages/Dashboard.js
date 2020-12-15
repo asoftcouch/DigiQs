@@ -48,7 +48,7 @@ const Dashboard = () => {
                         <p> {dashboard.approved + dashboard.declined + dashboard.pending} </p>
                     </div>
                     <div className="Category-header" id="approved">
-                        <p>Numero de Ventas aprovadas:</p>
+                        <p>Numero de Ventas aprobadas:</p>
                         <p> {dashboard.approved} </p>
                     </div>
                     <div className="Category-header" id="pending">
