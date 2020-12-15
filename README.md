@@ -9,8 +9,11 @@ La plataforma puede: Ingresar inventario nuevo, categorias, clientes y visualiza
 
 Los comandos para montar la aplicacion localmente son los siguientes: (Estas librerias estan ubicadas en el package.json de app-digiqs)
 
-```console
-npm install axios react react-redux react-router-dom react-scripts redux redux-thunk uuid 
+## Instalar los paquetes necesarios
+
+```bash
+
 cd app-digiqs
+npm install axios react react-redux react-router-dom react-scripts redux redux-thunk uuid 
 npm start
 ```
