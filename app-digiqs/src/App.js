@@ -58,11 +58,11 @@ function App() {
           </div>
         </div>
 
-        <div className="Notifications-bar">
-
+        {/* <div className="Notifications-bar">
+        //Habilitar si termino los componentes de notificaciones
         <NotiBar />
 
-        </div>
+        </div> */}
 
       
     </div>

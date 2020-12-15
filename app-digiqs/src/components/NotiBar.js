@@ -20,6 +20,7 @@ const Notibar = () => {
 
     const { notifications } = useSelector((state) => state.notifications);
 
+    console.log(notifications);
 
 
     return(
