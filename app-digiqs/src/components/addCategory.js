@@ -3,7 +3,7 @@ import axios from 'axios'
 import {useDispatch, useSelector} from 'react-redux';
 import {categoriesLoad} from '../actions/CategoryAction';
 import { motion } from 'framer-motion'
-
+import {loadNotifications} from '../actions/NotificationActions';
 import Style from '../styles/addCategory.css';
 
 const AddCategory = () => {
@@ -22,12 +22,7 @@ const AddCategory = () => {
       dispatch( categoriesLoad() );
     }, [dispatch]);
 
-
     const { categories } = useSelector((state) => state.categories);
-
-
-    console.log(categories);
-
 
     const addCategoryHandler = (e) => {
         setCategory(e.target.value);
@@ -39,8 +34,13 @@ const AddCategory = () => {
 
     const addCategory = async (e) => {
         e.preventDefault();
+        console.log(category);
+        console.log(description);
         const response = await axios.post('http://localhost:5000/Categories/add' ,{category: category, description: description})
         dispatch(categoriesLoad());
+        dispatch(loadNotifications());
+        setCategory('');
+        setDescription('');
     }
 
     return (

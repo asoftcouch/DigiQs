@@ -19,7 +19,7 @@ const Dashboard = () => {
 
       const { dashboard } = useSelector((state) => state.dashboard);
 
-      console.log(dashboard);
+ 
 
 
       const Animation = {
@@ -60,7 +60,7 @@ const Dashboard = () => {
                         <p>{dashboard.declined}</p>
                     </div>
                     <div className="Category-header" id="pending">
-                        <p class="sub-header">Base de Datos DigiQs: </p> 
+                        <p className="sub-header">Base de Datos DigiQs: </p> 
                     </div>
                     <div className="Category-header" id="declined">
                         <p>Numero de Clientes en la plataforma: </p>

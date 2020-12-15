@@ -30,3 +30,11 @@
   font-size: 15px;
   margin-top: 1%;
 }
+
+@media only screen and (max-width: 768px) {
+  /* Para mi modelo responsivo: page-viewer */
+  .Dashboard-container {
+    background-color: #02182b;
+    width: 100%;
+  }
+}

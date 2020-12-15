@@ -9,6 +9,7 @@
   color: white;
   font-weight: 600;
   border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px #000000;
 }
 
 .title-header {
@@ -37,4 +38,5 @@ input[type="number"] {
   color: white;
   background-color: #e37f4d;
   width: 100%;
+  box-shadow: 5px 5px 15px -5px #000000;
 }

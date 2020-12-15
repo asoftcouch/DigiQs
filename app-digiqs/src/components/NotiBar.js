@@ -20,7 +20,7 @@ const Notibar = () => {
 
     const { notifications } = useSelector((state) => state.notifications);
 
-    console.log(notifications);
+
 
 
     return(
@@ -32,22 +32,7 @@ const Notibar = () => {
 
                 <div className="Notification-messages">
                     
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-                    <NotiMessages />
-
+                    {notifications.map((item)=><NotiMessages key={item._id} type={item.type} description={item.description}/> )}
 
 
             </div>

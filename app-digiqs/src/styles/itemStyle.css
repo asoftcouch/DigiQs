@@ -25,6 +25,7 @@ th {
 
 table {
   width: 100%;
+  box-shadow: 5px 5px 15px -5px #000000;
 }
 
 .title-name {

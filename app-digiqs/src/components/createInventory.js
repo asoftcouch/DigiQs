@@ -5,7 +5,7 @@ import axios from 'axios';
 import {useDispatch, useSelector} from 'react-redux';
 import {categoriesLoad} from '../actions/CategoryAction';
 import {loadInventory} from '../actions/InventoryAction';
-
+import {loadNotifications} from '../actions/NotificationActions';
 
 const CreateInventory = () => {
 
@@ -46,7 +46,7 @@ const CreateInventory = () => {
     async function sendData(name, quantity, price, category) {
        const response = (await axios.post('http://localhost:5000/inventario/add', {name: name, quantity: quantity, price: price, category: category}))
        dispatch(loadInventory());
-
+       dispatch(loadNotifications());
     }
     
     return(

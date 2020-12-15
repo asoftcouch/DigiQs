@@ -22,14 +22,12 @@
 
 .Notification-messages {
   overflow-y: scroll;
-  height: 300px;
-  border: 3px solid white;
+  height: 500px;
   margin-left: 5%;
   margin-right: 5%;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   border: 3px solid black;
 }
 
@@ -53,6 +51,7 @@
   .Notification-messages {
     height: 150px;
     justify-content: space-evenly;
+    overflow-y: scroll;
   }
 
   .Message {

@@ -9,10 +9,10 @@ const NotiMessages = ({type, description}) => {
 
                 <div className="Message">
                     <div className="message-element">
-                        <p>{'type'}</p>
+                        <p>{type}</p>
                     </div>
                     <div className="message-text">
-                        <p>{'Description'}</p>
+                        <p>{description}</p> 
                 </div>
    
         </div>
