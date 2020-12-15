@@ -7,5 +7,3 @@ ReactJs.
 
 La plataforma puede: Ingresar inventario nuevo, categorias, clientes y visualizar ordenes, inventario, clientes y orden total. 
 
--Login (No terminada)
--Notificaciones (No terminada)
