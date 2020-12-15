@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DigiQs/static/css/main.8046ec87.chunk.css",
+    "main.css": "/DigiQs/static/css/main.cc8aee96.chunk.css",
     "main.js": "/DigiQs/static/js/main.ea80faa7.chunk.js",
     "main.js.map": "/DigiQs/static/js/main.ea80faa7.chunk.js.map",
     "runtime-main.js": "/DigiQs/static/js/runtime-main.d1389e23.js",
@@ -10,13 +10,13 @@
     "static/js/3.38b89f98.chunk.js": "/DigiQs/static/js/3.38b89f98.chunk.js",
     "static/js/3.38b89f98.chunk.js.map": "/DigiQs/static/js/3.38b89f98.chunk.js.map",
     "index.html": "/DigiQs/index.html",
-    "static/css/main.8046ec87.chunk.css.map": "/DigiQs/static/css/main.8046ec87.chunk.css.map",
+    "static/css/main.cc8aee96.chunk.css.map": "/DigiQs/static/css/main.cc8aee96.chunk.css.map",
     "static/js/2.16324596.chunk.js.LICENSE.txt": "/DigiQs/static/js/2.16324596.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d1389e23.js",
     "static/js/2.16324596.chunk.js",
-    "static/css/main.8046ec87.chunk.css",
+    "static/css/main.cc8aee96.chunk.css",
     "static/js/main.ea80faa7.chunk.js"
   ]
 }
