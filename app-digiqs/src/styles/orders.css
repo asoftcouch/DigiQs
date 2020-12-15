@@ -1,0 +1,33 @@
+.order-listing {
+  background-color: #02182b;
+  margin-top: 4%;
+}
+
+.order-listing p {
+  font-size: 12px;
+}
+
+.master {
+  font-size: 15px;
+  color: white;
+}
+
+.master-content {
+  margin-left: 2%;
+}
+
+.detail {
+  background-color: white;
+}
+
+.individual-detail {
+  border-bottom: 0.5px solid grey;
+}
+
+.individual-detail p {
+  margin-left: 3%;
+}
+
+.total p {
+  color: white;
+}

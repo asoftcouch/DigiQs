@@ -1,16 +1,20 @@
 import React from 'react';
 
 
-const OrdersItems = () => {
-    return(
+const OrderItems = ({name, price}) => {
 
-        <div>
-            <p>Producto :</p>
-            <p>Cantidad:</p>
-            <p>Precio Unitario: </p>
-            <p>Precio: </p>
+
+    let quantity = 1;
+    
+
+    return(
+        <div className="product-holder">
+            <p className='product-name'>{name}</p>
+            <p className='product-price'> {price}</p>
+            <p className='product-quantity'>quantity</p>
+            <p className='product-total'>total</p>
         </div>
     ) 
 }
 
-export default OrdersItems;
+export default OrderItems;

@@ -4,12 +4,15 @@ import {Switch, Route} from 'react-router-dom'
 
 import Inventario from './pages/Inventario';
 import Dashboard from './pages/Dashboard';
+
 //Componentes 
 import Nav from './components/Nav';
 import NotiBar from './components/NotiBar';
 import CreateOrder from './components/createOrder';
 import CreateInventory from './components/createInventory';
 import Clients from './components/Clients';
+import Orders from './components/Orders';
+
 
 //Styles
 import Style from './styles/app.css';
@@ -41,9 +44,13 @@ function App() {
                 <CreateInventory />
                 <Inventario />
               </Route>
+
               <Route path="/Orders" >
-                < CreateOrder />
+                <Orders />
               </Route>
+
+
+
               <Route path="/Clients">
                 <Clients />
               </Route>

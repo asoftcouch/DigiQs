@@ -1,0 +1,19 @@
+.Category-header {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.Dashboard-container {
+  background-color: #02182b;
+  height: 550px;
+  border-radius: 15px;
+}
+
+.Dashboard-Header h1 {
+  margin-top: 0;
+  color: #cd4e2f;
+  margin-left: 5%;
+}

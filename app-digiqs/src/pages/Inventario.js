@@ -30,7 +30,6 @@ const Inventario = ({ action, actionName }) => {
                     <th>Cantidad</th>
                     <th>Precio por Unidad</th>
                     <th>Categoria</th>
-                    <th>Acciones</th>
                 </tr>
             { inventory.map((item) => <InventoryItem actionName={actionName} action={action} key={item._id} name={item.name} quantity={item.quantity} price={item.price} category={item.category}/> ) }
                 </tbody>
