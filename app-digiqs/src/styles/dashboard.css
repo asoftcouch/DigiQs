@@ -35,6 +35,6 @@
   /* Para mi modelo responsivo: page-viewer */
   .Dashboard-container {
     background-color: #02182b;
-    width: 100%;
+    height: 700px;
   }
 }
