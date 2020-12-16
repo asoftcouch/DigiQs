@@ -36,7 +36,7 @@ const Dashboard = () => {
             <div className="Dashboard-inset">
                 <div className="Dashboard-Header">
                     <br/>
-                    <h1 >Bienvenido a tu Dashboard, Videogame Provider</h1>
+                    <h1 >Bienvenido a tu Dashboard, Proveedor102</h1>
                     <br />
                 </div>
                 <div className="Category-container">
